@@ -37,7 +37,40 @@ public class Customer {
 	@ApiModelProperty(value="provide just the gender")
 	private String gender;
 
-	// getters setters - avoided since we have used lombok, for more info
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getContact() {
+		return contact;
+	}
+
+	public void setContact(String contact) {
+		this.contact = contact;
+	}
+
+	public String getGender() {
+		return gender;
+	}
+
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+
+
+// getters setters - avoided since we have used lombok, for more info
 	// https://www.youtube.com/watch?v=lPhSOEh35i8&t=281s
 
 }

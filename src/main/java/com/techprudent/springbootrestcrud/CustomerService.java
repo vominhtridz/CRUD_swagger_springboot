@@ -4,9 +4,11 @@ public interface CustomerService {
 
 	public boolean deleteCustomer(long id) ;
 
-	public Customer updateCustomer(Customer updateCustomer);
+    public default Customer updateCustomer(Customer updateCustomer) {
+        return null;
+    }
 
-	public Customer createCustomer(Customer customer) ;
+    public Customer createCustomer(Customer customer) ;
 
 	public Customer getCustomer(long id) ;
 
